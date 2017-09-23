@@ -1,27 +1,44 @@
-var quizes = {
- easy:[
+var quizes = {//Please do not change the variable on this line
+ easy:[//1+1
   "1+1",
   "1+2",
   "5*6",
   "4+4",
   "4*2",
  ],
- hard:[
+ hard:[//5^5
   "5^2",
   "5*23",
   "67*76",
   "56*56^2",
  ],
- trick:[
+ trick:[//1+1=window
   "1+1",
   "2+2",
   "3+3",
   "7+7",
   "8+8",
  ],
- answers:{
-  easy:[],
-  hard:[],
-  trick:[],
+ answers:{//When adding on to it, please do it in order
+  easy:[
+   "2",
+   "3",
+   "30",
+   "8",
+   "8",
+  ],
+  hard:[
+   "",
+   "",
+   "",
+   "",
+  ],
+  trick:[
+   "",
+   "",
+   "",
+   "",
+   "",
+  ],
  },
 };
