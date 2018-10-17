@@ -1,4 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
-body{
+
+body {
   font-family: 'Indie Flower', cursive;
+}
+
+html {
+  background: #fafafa;
+}
+
+body {
+  min-height: 100vh;
+  position: relative;
+  margin: 0;
 }
