@@ -1,34 +1,41 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset = "utf-8">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="shortcut icon" href="favicon.ico">
-    <link rel="icon" href="favicon.ico">
-    <title>Super quiz</title>
-  </head>
-  <body>
-    <p>Not done yet</p>
-    <script type = "text/javascript">
-      if('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('/sw.js', { scope: '/' })
-          .then(function(registration) {
-                console.log('Service Worker Registered');
-          });
+<html lang="en">
 
-        navigator.serviceWorker.ready.then(function(registration) {
-           console.log('Service Worker Ready');
-        });
-      }
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Super Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+<body>
+  <h1>Not finished yet!</h1>
+  <script async>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/service-worker.js');
+      .then(function(registration) {
+        console.log('Service Worker Registered');
+      });
+      navigator.serviceWorker.ready.then(function(registration) {
+        console.log('Service Worker Ready');
+      });
+    }
+    (function(i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function() {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-59325548-2', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <script src="quizes.js" async></script>
+</body>
 
-      ga('create', 'UA-59325548-2', 'auto');
-      ga('send', 'pageview');
-    </script>
-    <script src = "quizes.js"></script>
-  </body>
 </html>
